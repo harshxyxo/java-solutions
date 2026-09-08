@@ -9,7 +9,7 @@ public class firstnonrepeatingchar {
         }
         for(int i=0; i<s.length();i++){
             char ch = s.charAt(i);
-            if(freq[ch-'a'] ==1){
+            if(freq[ch -'a'] ==1){
                 System.out.println(ch);
                 break;
             }
