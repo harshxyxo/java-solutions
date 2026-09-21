@@ -1,13 +1,34 @@
+import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args){
-        String name = "banana";
-       int count =0;
-       for(int i =0; i<name.length(); i++){
-           if(name.charAt(i)=='a'){
-               count++;
-           }
-       }
-       System.out.println("Number of 'a' in the string: " + count);
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(10);
+        list.add(20);
+        list.add(30);
+
+        System.out.println(list);
+
+        System.out.println(list.get(1));
+
+        list.set(1, 50);
+
+        System.out.println(list);
+
+        list.add(1, 100);
+
+        System.out.println(list);
+
+        list.remove(2);
+
+        System.out.println(list);
+
+        System.out.println(list.size());
+
+        System.out.println(list.contains(30));
+
     }
 }
